@@ -38,6 +38,8 @@ public class ForecastFragment extends Fragment {
                 "Tomorrow - Foggy - 88/63",
                 "Win - Cloudy - 88/63",
                 "3iw - Sunny - 88/63",
+                "Tst - Chta - 88/63",
+                "Ysn - Sehd - 88/63",
                 "Sun - Sunny - 14/63"
         };
         List<String> weekForecast = new ArrayList<String>(
