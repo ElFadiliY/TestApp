@@ -7,8 +7,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -45,11 +47,22 @@ public class ForecastFragment extends Fragment {
         List<String> weekForecast = new ArrayList<String>(
                 Arrays.asList(forecastArray));
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),R.layout.list_item_forecast,
-                R.id.list_item_forecast_textView, forecastArray);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1, forecastArray);
+
+        // Using a custom item view
+        ArrayAdapter<String> cadapter = new ArrayAdapter<String>(getActivity(),R.layout.list_item_forecast,
+        R.id.list_item_forecast_textView, forecastArray);
 
         ListView list = (ListView) rootView.findViewById(R.id.listView_forecast);
         list.setAdapter(adapter);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Toast.makeText(getActivity(), String.valueOf(adapterView.getItemAtPosition(i)), Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return rootView;
     }

@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -55,7 +56,8 @@ public class MainActivity extends Activity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            //return true;
+            Toast.makeText(this,"3iw !", Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);
