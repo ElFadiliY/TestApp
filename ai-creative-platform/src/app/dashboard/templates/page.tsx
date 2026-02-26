@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Search, Crown, ArrowRight, Sparkles, Filter } from "lucide-react";
-import { clsx } from "clsx";
+import { Search, Crown, Sparkles, Filter } from "lucide-react";
 import { templates, getPlatformLabel, getCategoryLabel } from "@/lib/mock-data";
 import type { Platform, TemplateCategory } from "@/lib/types";
 

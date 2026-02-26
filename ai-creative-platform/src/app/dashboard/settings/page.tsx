@@ -7,8 +7,6 @@ import {
   Bell,
   Shield,
   Key,
-  Globe,
-  Palette,
   Save,
   Check,
 } from "lucide-react";

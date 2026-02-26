@@ -5,14 +5,13 @@ import Link from "next/link";
 import {
   Plus,
   FolderOpen,
-  MoreHorizontal,
-  Image,
   Clock,
   ArrowRight,
   Search,
   X,
   Pencil,
   Trash2,
+  Layers,
 } from "lucide-react";
 import { clsx } from "clsx";
 import { projects as initialProjects, brands } from "@/lib/mock-data";
@@ -194,7 +193,7 @@ export default function ProjectsPage() {
                   {brand?.name}
                 </span>
                 <span className="flex items-center gap-1">
-                  <Image className="h-3 w-3" />
+                  <Layers className="h-3 w-3" />
                   {project.creativeCount} creatives
                 </span>
               </div>

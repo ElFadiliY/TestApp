@@ -3,7 +3,6 @@
 import { useState } from "react";
 import {
   Search,
-  Filter,
   Grid3X3,
   List,
   Download,
@@ -15,7 +14,7 @@ import {
   ArrowUpDown,
 } from "lucide-react";
 import { clsx } from "clsx";
-import { creatives, brands, templates, getPlatformLabel } from "@/lib/mock-data";
+import { creatives, brands, getPlatformLabel } from "@/lib/mock-data";
 import type { Platform } from "@/lib/types";
 
 const platformOptions: { value: Platform | "all"; label: string }[] = [

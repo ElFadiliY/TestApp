@@ -4,7 +4,6 @@ import Link from "next/link";
 import {
   Image,
   FolderOpen,
-  Palette,
   TrendingUp,
   Sparkles,
   ArrowRight,

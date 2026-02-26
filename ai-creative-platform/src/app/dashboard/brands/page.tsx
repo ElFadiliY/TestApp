@@ -8,10 +8,8 @@ import {
   Globe,
   Type,
   ExternalLink,
-  Palette,
   X,
 } from "lucide-react";
-import { clsx } from "clsx";
 import { brands as initialBrands } from "@/lib/mock-data";
 import type { Brand } from "@/lib/types";
 
