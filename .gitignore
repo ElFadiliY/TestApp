@@ -1,6 +1,10 @@
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+node_modules/
+.next/
+out/
+build/
 .DS_Store
-/build
+*.tsbuildinfo
+.env
+.env.local
+.env.production.local
+.env.development.local
